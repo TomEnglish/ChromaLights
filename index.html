@@ -10,28 +10,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 <script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          base:           '#FFFFFF',
-          subtle:         'rgb(250 250 250)',
-          'text-primary': '#0A0A0A',
-          'text-secondary': '#525252',
-          accent:         '#5B21B6',
-          'accent-hover': '#4C1D95',
-          'border-soft':  '#E5E5E5',
-          sale:           '#991B1B',
-        },
-        fontFamily: {
-          sans: ['Inter', 'system-ui', 'sans-serif'],
-          mono: ['JetBrains Mono', 'ui-monospace', 'SFMono-Regular', 'monospace'],
-        },
-      },
-    },
-  };
-</script>
 <style>
   html { scroll-behavior: smooth; }
   body { font-family: 'Inter', system-ui, sans-serif; color: #0A0A0A; }
@@ -47,27 +25,27 @@
   .nav-scrolled { backdrop-filter: blur(10px); background-color: rgba(255,255,255,0.85); border-bottom: 1px solid #E5E5E5; }
 </style>
 </head>
-<body class="bg-base text-text-primary antialiased">
+<body class="bg-white text-neutral-900 antialiased">
 
 <!-- =========================================================
      SECTION 1: STICKY HEADER
 ========================================================= -->
 <header id="site-header" class="fixed top-0 inset-x-0 z-50 transition-all duration-200">
   <nav class="max-w-5xl mx-auto px-6 md:px-12 h-16 flex items-center justify-between">
-    <a href="#top" class="font-semibold tracking-tight text-text-primary">
+    <a href="#top" class="font-semibold tracking-tight text-neutral-900">
       <span class="hidden sm:inline">Chroma Stack — Resale</span>
       <span class="sm:hidden">Chroma Resale</span>
     </a>
     <div class="flex items-center gap-2 sm:gap-3">
       <a href="https://www.reddit.com/user/Failtwin/" target="_blank" rel="noopener"
-         class="bg-accent text-white px-4 sm:px-5 py-2 rounded-full font-medium hover:bg-accent-hover transition text-sm flex items-center gap-2"
+         class="bg-violet-700 text-white px-4 sm:px-5 py-2 rounded-full font-medium hover:bg-violet-800 transition text-sm flex items-center gap-2"
          aria-label="DM on Reddit">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm5.36 11.06a1.46 1.46 0 01-2.16 1.27c-.79.55-1.92.91-3.2.91s-2.41-.36-3.2-.91a1.46 1.46 0 11-1.51-2.49 1.46 1.46 0 012.13.36c.66-.4 1.55-.65 2.58-.65s1.92.25 2.58.65a1.46 1.46 0 012.78 1.86zM9.6 12.5a.96.96 0 11-1.92 0 .96.96 0 011.92 0zm6.72 0a.96.96 0 11-1.92 0 .96.96 0 011.92 0z"/>
         </svg>
         <span class="hidden sm:inline">DM on Reddit</span>
       </a>
-      <a href="#" class="js-mailto border border-neutral-300 text-text-primary px-4 sm:px-5 py-2 rounded-full font-medium hover:border-neutral-500 transition text-sm flex items-center gap-2"
+      <a href="#" class="js-mailto border border-neutral-300 text-neutral-900 px-4 sm:px-5 py-2 rounded-full font-medium hover:border-neutral-500 transition text-sm flex items-center gap-2"
          data-u="ZGF1YmVyX3NjcmFwcHlfOA==" data-d="aWNsb3VkLmNvbQ=="
          aria-label="Email">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -92,7 +70,7 @@
         Selling My Complete Chroma Stack
       </h1>
       <p class="mt-6 text-lg md:text-xl text-neutral-200 max-w-2xl leading-relaxed">
-        Five Chroma light therapy devices. All barely used, all in original carrying cases. I had a brief stint at Chroma — the devices came home with me and have been packed away since. Total use across all five is under one hour. Selling at 60% of current Chroma retail.
+        Five Chroma light therapy devices. All barely used, all in original carrying cases. I worked at Chroma for a while; the devices came home with me and have been packed away since. Total use across all five is under one hour. Selling at 60% of current Chroma retail.
       </p>
 
       <div class="mt-8 flex flex-wrap items-baseline gap-x-3 gap-y-1 font-mono-spec text-base md:text-lg">
@@ -102,7 +80,7 @@
       </div>
 
       <div class="mt-10 flex flex-wrap gap-3">
-        <a href="#devices" class="bg-white text-text-primary px-6 py-3 rounded-full font-medium hover:bg-neutral-100 transition">
+        <a href="#devices" class="bg-white text-neutral-900 px-6 py-3 rounded-full font-medium hover:bg-neutral-100 transition">
           Jump to devices ↓
         </a>
       </div>
@@ -117,16 +95,16 @@
   <!-- ============== LUX VITAL ============== -->
   <section class="px-6 md:px-12 py-16 md:py-24">
     <div class="max-w-5xl mx-auto">
-      <article class="border border-border-soft rounded-2xl p-8 md:p-12">
+      <article class="border border-neutral-200 rounded-2xl p-8 md:p-12">
         <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
           <div>
             <p class="text-xs uppercase tracking-[0.18em] text-violet-700 font-semibold mb-2 inline-block bg-violet-100 px-3 py-1 rounded-full">Listing 1 of 3</p>
             <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Chroma Lux Vital</h2>
-            <p class="mt-2 text-text-secondary text-lg">Opsin Activation + Full Red Light Therapy</p>
+            <p class="mt-2 text-neutral-600 text-lg">Opsin Activation + Full Red Light Therapy</p>
           </div>
           <div class="text-left md:text-right shrink-0">
             <div class="text-3xl md:text-4xl font-bold tracking-tight">$1,260</div>
-            <div class="text-text-secondary line-through font-mono-spec text-sm mt-1">$2,100 retail</div>
+            <div class="text-neutral-600 line-through font-mono-spec text-sm mt-1">$2,100 retail</div>
           </div>
         </div>
 
@@ -134,7 +112,7 @@
           Chroma's most comprehensive non-Trinity device. Nine wavelengths spanning deep violet through far near-infrared.
         </p>
 
-        <div class="mt-8 bg-subtle border border-border-soft rounded-xl p-5 md:p-6 overflow-x-auto">
+        <div class="mt-8 bg-neutral-900 text-neutral-100 border border-neutral-800 rounded-xl p-5 md:p-6 overflow-x-auto shadow-sm">
           <pre class="font-mono-spec text-sm md:text-base leading-relaxed whitespace-pre">385nm  Deep Violet   50W   (OPN3 stimulation)
 405nm  Violet        50W   (OPN5 stimulation)
 485nm  Cyan          50W   (OPN4 melanopsin)
@@ -148,7 +126,7 @@
 TOTAL                200W driven</pre>
         </div>
 
-        <p class="mt-8 text-lg leading-relaxed text-text-secondary">
+        <p class="mt-8 text-lg leading-relaxed text-neutral-600">
           Combines a complete red and near-infrared therapy panel with the violet, UVA, and cyan wavelengths that activate the non-visual photoreceptors — OPN3, OPN4 melanopsin, and OPN5 — that govern circadian rhythm, mood regulation, and alertness. No other consumer device covers this complete range outside of Chroma's $3,300 Trinity.
         </p>
 
@@ -173,7 +151,7 @@ TOTAL                200W driven</pre>
           </a>
         </div>
 
-        <a href="#" class="js-mailto inline-block mt-10 bg-accent text-white px-6 py-3 rounded-full font-medium hover:bg-accent-hover transition"
+        <a href="#" class="js-mailto inline-block mt-10 bg-violet-700 text-white px-6 py-3 rounded-full font-medium hover:bg-violet-800 transition"
            data-u="ZGF1YmVyX3NjcmFwcHlfOA==" data-d="aWNsb3VkLmNvbQ=="
            data-s="Interested in Chroma Lux Vital">
           Claim the Lux Vital — Email or DM on Reddit
@@ -183,18 +161,18 @@ TOTAL                200W driven</pre>
   </section>
 
   <!-- ============== D-LIGHT ============== -->
-  <section class="px-6 md:px-12 py-16 md:py-24 bg-subtle">
+  <section class="px-6 md:px-12 py-16 md:py-24 bg-neutral-50">
     <div class="max-w-5xl mx-auto">
-      <article class="border border-border-soft rounded-2xl p-8 md:p-12 bg-white">
+      <article class="border border-neutral-200 rounded-2xl p-8 md:p-12 bg-white">
         <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
           <div>
             <p class="text-xs uppercase tracking-[0.18em] text-violet-700 font-semibold mb-2 inline-block bg-violet-100 px-3 py-1 rounded-full">Listing 2 of 3</p>
             <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Chroma D-Light</h2>
-            <p class="mt-2 text-text-secondary text-lg">Vitamin D + Full Spectrum</p>
+            <p class="mt-2 text-neutral-600 text-lg">Vitamin D + Full Spectrum</p>
           </div>
           <div class="text-left md:text-right shrink-0">
             <div class="text-3xl md:text-4xl font-bold tracking-tight">$1,140</div>
-            <div class="text-text-secondary line-through font-mono-spec text-sm mt-1">$1,900 retail</div>
+            <div class="text-neutral-600 line-through font-mono-spec text-sm mt-1">$1,900 retail</div>
           </div>
         </div>
 
@@ -202,7 +180,7 @@ TOTAL                200W driven</pre>
           The only LED-based UVB device on the consumer market.
         </p>
 
-        <div class="mt-8 bg-subtle border border-border-soft rounded-xl p-5 md:p-6 overflow-x-auto">
+        <div class="mt-8 bg-neutral-900 text-neutral-100 border border-neutral-800 rounded-xl p-5 md:p-6 overflow-x-auto shadow-sm">
           <pre class="font-mono-spec text-sm md:text-base leading-relaxed whitespace-pre">297nm  UVB           25W   (vitamin D synthesis)
 405nm  Violet        30W   (OPN3 & OPN5)
 630nm  Red           20W
@@ -213,7 +191,7 @@ TOTAL                200W driven</pre>
 TOTAL                195W driven</pre>
         </div>
 
-        <p class="mt-8 text-lg leading-relaxed text-text-secondary">
+        <p class="mt-8 text-lg leading-relaxed text-neutral-600">
           Chroma rates the D-Light at over 1,000 IU vitamin D in roughly 30 seconds for type II skin at 12 inches. The 140W of red and near-infrared output is intentional — it counterbalances UV stress and supports cellular repair while the narrowband 297nm UVB drives vitamin D synthesis. Includes the recommended safety glasses.
         </p>
 
@@ -238,7 +216,7 @@ TOTAL                195W driven</pre>
           </a>
         </div>
 
-        <a href="#" class="js-mailto inline-block mt-10 bg-accent text-white px-6 py-3 rounded-full font-medium hover:bg-accent-hover transition"
+        <a href="#" class="js-mailto inline-block mt-10 bg-violet-700 text-white px-6 py-3 rounded-full font-medium hover:bg-violet-800 transition"
            data-u="ZGF1YmVyX3NjcmFwcHlfOA==" data-d="aWNsb3VkLmNvbQ=="
            data-s="Interested in Chroma D-Light">
           Claim the D-Light — Email or DM on Reddit
@@ -250,7 +228,7 @@ TOTAL                195W driven</pre>
   <!-- ============== IRONFORGE (3 units available) ============== -->
   <section class="px-6 md:px-12 py-16 md:py-24">
     <div class="max-w-5xl mx-auto">
-      <article class="border border-border-soft rounded-2xl p-8 md:p-12">
+      <article class="border border-neutral-200 rounded-2xl p-8 md:p-12">
         <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
           <div>
             <p class="text-xs uppercase tracking-[0.18em] text-violet-700 font-semibold mb-2 inline-block bg-violet-100 px-3 py-1 rounded-full">Listing 3 of 3</p>
@@ -258,11 +236,11 @@ TOTAL                195W driven</pre>
               Chroma Ironforge
               <span class="ml-2 align-middle inline-block bg-violet-100 text-violet-700 text-base font-semibold px-3 py-1 rounded-full">3× available</span>
             </h2>
-            <p class="mt-2 text-text-secondary text-lg">High-Power Handheld Red/NIR</p>
+            <p class="mt-2 text-neutral-600 text-lg">High-Power Handheld Red/NIR</p>
           </div>
           <div class="text-left md:text-right shrink-0">
-            <div class="text-3xl md:text-4xl font-bold tracking-tight">$570<span class="text-base font-normal text-text-secondary"> each</span></div>
-            <div class="text-text-secondary line-through font-mono-spec text-sm mt-1">$950 retail</div>
+            <div class="text-3xl md:text-4xl font-bold tracking-tight">$570<span class="text-base font-normal text-neutral-600"> each</span></div>
+            <div class="text-neutral-600 line-through font-mono-spec text-sm mt-1">$950 retail</div>
           </div>
         </div>
 
@@ -270,7 +248,7 @@ TOTAL                195W driven</pre>
           Highest power-density handheld red light therapy device on the consumer market. Three identical units available — all in the same condition.
         </p>
 
-        <div class="mt-8 bg-subtle border border-border-soft rounded-xl p-5 md:p-6 overflow-x-auto">
+        <div class="mt-8 bg-neutral-900 text-neutral-100 border border-neutral-800 rounded-xl p-5 md:p-6 overflow-x-auto shadow-sm">
           <pre class="font-mono-spec text-sm md:text-base leading-relaxed whitespace-pre">850nm  Near-IR       80%
 670nm  Deep Red      20%
 ─────────────────────────
@@ -279,11 +257,11 @@ Power      200W driven
 Form       Handheld brick form factor</pre>
         </div>
 
-        <p class="mt-8 text-lg leading-relaxed text-text-secondary">
+        <p class="mt-8 text-lg leading-relaxed text-neutral-600">
           Designed for targeted, high-intensity treatment. Where conventional panels require 15–20 minute sessions, the Ironforge delivers an equivalent dosage in 60–90 seconds at close range. Use with constant motion to prevent thermal buildup. Each unit includes power supply and original carrying case.
         </p>
 
-        <p class="mt-4 text-sm leading-relaxed text-text-secondary italic">
+        <p class="mt-4 text-sm leading-relaxed text-neutral-600 italic">
           The three units are visually and functionally identical. Photos below show one representative unit — additional photos of any specific unit available on request before purchase.
         </p>
 
@@ -302,7 +280,7 @@ Form       Handheld brick form factor</pre>
           </a>
         </div>
 
-        <a href="#" class="js-mailto inline-block mt-10 bg-accent text-white px-6 py-3 rounded-full font-medium hover:bg-accent-hover transition"
+        <a href="#" class="js-mailto inline-block mt-10 bg-violet-700 text-white px-6 py-3 rounded-full font-medium hover:bg-violet-800 transition"
            data-u="ZGF1YmVyX3NjcmFwcHlfOA==" data-d="aWNsb3VkLmNvbQ=="
            data-s="Interested in Chroma Ironforge">
           Claim an Ironforge — Email or DM on Reddit
@@ -314,13 +292,13 @@ Form       Handheld brick form factor</pre>
   <!-- =========================================================
        SECTION 5: WHY I'M SELLING
   ========================================================= -->
-  <section class="px-6 md:px-12 py-16 md:py-24 bg-subtle">
+  <section class="px-6 md:px-12 py-16 md:py-24 bg-neutral-50">
     <div class="max-w-3xl mx-auto">
       <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Why I'm selling</h2>
-      <div class="mt-8 space-y-6 text-lg leading-relaxed text-text-secondary">
-        <p>I worked at Chroma for a few weeks. The way that stretch went is part of why I never built a daily routine around the devices — they came home with me and stayed in their carrying cases. Total combined use across all five is under one hour.</p>
+      <div class="mt-8 space-y-6 text-lg leading-relaxed text-neutral-600">
+        <p>I worked at Chroma for a while. The way that stretch went is part of why I never built a daily routine around the devices — they came home with me and stayed in their carrying cases. Total combined use across all five is under one hour.</p>
         <p>I'm based in upstate South Carolina (Campobello/Tryon area, near Spartanburg). Local pickup is welcome. For shipping, everything goes USPS Priority Mail, insured, double-boxed.</p>
-        <p>No flipping, no markup games. These are listed at 60% of current Chroma retail because the goal is to find them homes with people who'll actually use them.</p>
+        <p>These are listed at 60% of current Chroma retail because the goal is to find them homes with people who'll actually use them.</p>
       </div>
     </div>
   </section>
@@ -331,7 +309,7 @@ Form       Handheld brick form factor</pre>
   <section class="px-6 md:px-12 py-16 md:py-24">
     <div class="max-w-3xl mx-auto">
       <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Condition</h2>
-      <ul class="mt-8 space-y-3 text-lg leading-relaxed text-text-secondary list-disc pl-6 marker:text-accent">
+      <ul class="mt-8 space-y-3 text-lg leading-relaxed text-neutral-600 list-disc pl-6 marker:text-violet-700">
         <li>Less than 1 hour of total use across all five devices, lifetime</li>
         <li>Each device lived in its original carrying case between (rare) uses</li>
         <li>All LEDs verified at full brightness — see photos for each individual unit</li>
@@ -344,10 +322,10 @@ Form       Handheld brick form factor</pre>
   <!-- =========================================================
        SECTION 7: SHIPPING & PAYMENT
   ========================================================= -->
-  <section class="px-6 md:px-12 py-16 md:py-24 bg-subtle">
+  <section class="px-6 md:px-12 py-16 md:py-24 bg-neutral-50">
     <div class="max-w-3xl mx-auto">
       <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Shipping &amp; payment</h2>
-      <ul class="mt-8 space-y-3 text-lg leading-relaxed text-text-secondary list-disc pl-6 marker:text-accent">
+      <ul class="mt-8 space-y-3 text-lg leading-relaxed text-neutral-600 list-disc pl-6 marker:text-violet-700">
         <li>USPS Priority Mail, insured up to declared value</li>
         <li>Double-boxed: original carrying case inside outer shipping box</li>
         <li>Lithium-battery devices (Lux Vital, D-Light) ship ground per regulations — slightly slower</li>
@@ -364,21 +342,21 @@ Form       Handheld brick form factor</pre>
   <section class="px-6 md:px-12 py-16 md:py-24">
     <div class="max-w-3xl mx-auto">
       <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Contact</h2>
-      <p class="mt-8 text-lg leading-relaxed text-text-secondary">
+      <p class="mt-8 text-lg leading-relaxed text-neutral-600">
         Best path: DM on Reddit at
-        <a href="https://www.reddit.com/user/Failtwin/" target="_blank" rel="noopener" class="text-accent hover:text-accent-hover underline">u/Failtwin</a>.
+        <a href="https://www.reddit.com/user/Failtwin/" target="_blank" rel="noopener" class="text-violet-700 hover:text-violet-800 underline">u/Failtwin</a>.
         Email also works — use the <strong>Send email</strong> button below (a one-click mailto opens; the address is masked from scrapers).
       </p>
-      <p class="mt-4 text-lg leading-relaxed text-text-secondary">
+      <p class="mt-4 text-lg leading-relaxed text-neutral-600">
         First serious offer at or near asking gets it. These are cross-listed on eBay and Facebook Marketplace, so an item may go offline at any time. Confirm availability before sending payment.
       </p>
 
       <div class="mt-8 flex flex-wrap gap-3">
         <a href="https://www.reddit.com/user/Failtwin/" target="_blank" rel="noopener"
-           class="bg-accent text-white px-6 py-3 rounded-full font-medium hover:bg-accent-hover transition">
+           class="bg-violet-700 text-white px-6 py-3 rounded-full font-medium hover:bg-violet-800 transition">
           DM on Reddit
         </a>
-        <a href="#" class="js-mailto border border-neutral-300 text-text-primary px-6 py-3 rounded-full font-medium hover:border-neutral-500 transition"
+        <a href="#" class="js-mailto border border-neutral-300 text-neutral-900 px-6 py-3 rounded-full font-medium hover:border-neutral-500 transition"
            data-u="ZGF1YmVyX3NjcmFwcHlfOA==" data-d="aWNsb3VkLmNvbQ=="
            data-s="Interested in the Chroma resale listings">
           Send email
@@ -392,8 +370,8 @@ Form       Handheld brick form factor</pre>
 <!-- =========================================================
      SECTION 9: FOOTER
 ========================================================= -->
-<footer class="border-t border-border-soft px-6 md:px-12 py-10">
-  <div class="max-w-5xl mx-auto text-sm text-text-secondary flex flex-col md:flex-row gap-2 md:items-center md:justify-between">
+<footer class="border-t border-neutral-200 px-6 md:px-12 py-10">
+  <div class="max-w-5xl mx-auto text-sm text-neutral-600 flex flex-col md:flex-row gap-2 md:items-center md:justify-between">
     <p>Last updated: 2026-04-27.</p>
     <p>Listings may go offline as items sell — DM to verify availability.</p>
   </div>
