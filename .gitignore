@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Raw source photos — duplicated into images/ already
+/DLight/
+/IronForge/
+/LuxVital/
+
+# Internal spec — not for the public repo
+chroma-resale-site-spec_2.md
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
